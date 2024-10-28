@@ -4,6 +4,24 @@ body {
    padding: 0;
 }
 
+.material-symbols-outlined {
+   font-family: 'Material Symbols Outlined';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 24px;  /* Preferred icon size */
+   display: inline-block;
+   line-height: 1;
+   text-transform: none;
+   letter-spacing: normal;
+   word-wrap: normal;
+   white-space: nowrap;
+   direction: ltr;
+ }
+
+ .collapsed {
+   display: none;
+ }
+
 nav {
    background-color: #000;
    color: #fff;
@@ -23,7 +41,8 @@ nav .mobile .header {
 
 nav .mobile .header .more button {
    border: none;
-   background-color: crimson;
+   background-color: #000;
+   color: #fff;
    padding: 15px;
    cursor: pointer;
 }
