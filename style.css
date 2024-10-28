@@ -11,7 +11,21 @@ nav {
 }
 
 nav .mobile {
+   display: none;
+}
 
+nav .mobile .header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 15px;
+}
+
+nav .mobile .header .more button {
+   border: none;
+   background-color: crimson;
+   padding: 15px;
+   cursor: pointer;
 }
 
 nav .logo {
@@ -32,4 +46,52 @@ nav a:hover {
 
 nav .desktop {
    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   pad: 0 20px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+   display: flex;
+}
+
+nav .desktop .secondary.mini {
+   display: none;
+}
+
+@media screen and (max-width: 853px){
+   nav .logo {
+      min-width: 100px;
+   }
+
+   nav .secondary.full {
+      display: none;
+   }
+
+   nav .secondary.mini {
+      display: block !important;
+   }
+
+   nav .secondary.mini .submenu {
+      background-color: #000;
+      position: absolute;
+      display: none;
+      width: 200px;
+      right: 0;
+   }
+
+   nav .secondary.mini:hover .submenu {
+      display: block;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   nav .desktop {
+      display: none;
+   }
+
+   nav .mobile {
+      display: block;
+   }
 }
